@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <script>
-  function myFunction() {
-    document.getElementById("demo").innerHTML = "祝君好运！";
-  }
-  </script>
-
-  <script type="text/javascript">
-  function insertpic(){
-    path="C:\Users\eagerwu\Desktop\github\wuyi1020.github.io\一个三角.jpg"
-    document.getElementById('img').innerHTML='<img src="一个三角.jpg" />';
-  }
-  </script>
-
+  <meta charset="utf-8">
+  <title>谜题</title>
 </head>
 
 <body>
-<h2>这是一个简单的谜题，请耐心解题</h2>
-<p id="demo">准备好解题了吗？</p>
-<button type="button" onclick="myFunction()">~万事俱备~</button>
+  <button type="button" onclick="alert('HELLO！')">试试这里!</button>
 
-<h3>请根据提示逐步猜出角A的读书</h3>
-<div id="img"></div>
-<button type="button" onclick="Function insertpic()">查看题目</button>
+  <p><strong>问题：A+24=？ A是一个小于10的奇数。</strong>
+  <p>请输如你的答案。若回答不正确，我们会弹出提示框帮助您继续答题。</p >
+
+  <input id="demo" type="text">
+
+  <script>
+function myFunction()
+{
+	var x=document.getElementById("demo").value;
+	if(x>29||x<29)
+	{
+		alert("回答错误，请再想想~");
+	}
+  else {
+    alert("恭喜你，回答正确！")
+  }
+}
+</script>
+
+  <button type="button" onclick="myFunction()">提交</button>
 
 </body>
 </html>
